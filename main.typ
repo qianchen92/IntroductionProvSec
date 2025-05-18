@@ -12,25 +12,17 @@
 
 #show: FRONT-MATTER.with(
   // Document metadata
-  title: (
-    title: "Provable Security",
-    subtitle: "Course Notes",
-  ),
-  authors: (
-    (
-      given-name: "Qian",
-      name: "Chen",
-      affiliation: "School of Cyber Science and Technology, Shandong University",
-      email: "chen.qian@sdu.edu.cn",
-    )
-  ),
+  title: (title: "Provable Security", subtitle: "Course Notes"),
+  authors: ((
+    given-name: "Qian",
+    name: "Chen",
+    affiliation: "School of Cyber Science and Technology, Shandong University",
+    email: "chen.qian@sdu.edu.cn",
+  )),
   editors: ("Chen Qian",),
   publisher: "Home Made",
   location: "Qingdao, Shandong, China",
-  affiliated: (
-    illustrator: ("Chen Qian",),
-    organizer: "Shandong University",
-  ),
+  affiliated: (illustrator: ("Chen Qian",), organizer: "Shandong University"),
   keywords: ("Cryptography", "Provable Security", "Simulation"),
   date: auto, // auto => datetime.today()
   // Document general format
@@ -45,22 +37,15 @@
 
 // The lyceum auto-generates the title page
 
-
 // Show rule for the outline
 #show outline.entry.where(level: 1): it => {
   v(12pt, weak: true)
   strong(it)
 }
 
-
 = Contents
 
-#outline(
-  title: none,
-  target: heading.where(level: 1),
-  indent: auto,
-)
-
+#outline(title: none, target: heading.where(level: 1), indent: auto)
 
 //----------------------------------------------------------------------------//
 //                                BODY-MATTER                                 //
@@ -68,10 +53,10 @@
 
 #show: BODY-MATTER.with(TEXT-SIZE, "Chapter", ship-part-page: false)
 
+#include "chapters/game.typ"
+#include "chapters/simulation.typ"
 #include "chapters/intro.typ"
 #include "chapters/UC.typ"
-
-
 
 //----------------------------------------------------------------------------//
 //                                  APPENDIX                                  //
@@ -85,7 +70,6 @@
   style: "iso-690-author-date",
 )
 
-
 //----------------------------------------------------------------------------//
 //                                BACK-MATTER                                 //
 //----------------------------------------------------------------------------//
@@ -94,8 +78,7 @@
 
 = Citing This Book
 
-The following is the _auto-generated_, self bibliography database entry for the *`hayagriva`*
-manager:
+The following is the _auto-generated_, self bibliography database entry for the *`hayagriva`* manager:
 
 #block(width: 100%)[
   #let self-bib = context query(<self-bib-entry>).first().value
@@ -104,5 +87,4 @@ manager:
     #self-bib
   ]
 ]
-
 

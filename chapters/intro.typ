@@ -3,11 +3,20 @@
 
 == General Notes
 
-This is a draft version of the course notes for the "Provable Security" course. The notes are intended to provide a comprehensive overview of the topics covered in the course, including the game-based security, simulation-based security, UC framework, and various cryptographic protocols. This document is a work in progress and will be updated as the course progresses. It is possible that there are some mistakes or typos in the notes. If you find any errors, please feel free to contact me at #link("chen.qian@sdu.edu.cn").
+These notes are a draft version for the "Provable Security" course. They aim to provide a comprehensive overview of the
+topics covered, including game-based security, simulation-based security, the UC framework, and various cryptographic
+protocols. This document is a work in progress and will be updated throughout the course. Errors or omissions may
+remain; readers are encouraged to report any issues to #link("chen.qian@sdu.edu.cn").
 
 == Reference Books
 
-We use the following books and papers as references for the course:
-- @JACM:Canetti20: For the UC framework, we refer to the paper "Universally Composable Security" by Ran Canetti. This paper is a newer version of @FOCS:Canetti01 which first introduce the notion of $UC$ security. It provides a comprehensive overview of the UC framework and its applications in cryptography.
-
+The following books and papers serve as primary references for this course:
+- @Shoup04: For the game-based security framework, we refer to "Sequences of games: a tool for taming complexity in
+  security proofs" by Victor Shoup. This introduce the basic concepts of game-based security and provides a comprehensive
+  overview of the framework.
+- @Lindell17: For the simulation-based security framework, we refer to "How to Simulate It - A Tutorial on the Simulation
+  Proof Technique" by Yehuda Lindell.
+- @JACM:Canetti20: For the Universal Composability (UC) framework, we refer to "Universally Composable Security" by Ran
+  Canetti. This paper is an updated version of @FOCS:Canetti01, which originally introduced the concept of UC security. It
+  provides a comprehensive overview of the UC framework and its applications in cryptography.
 
