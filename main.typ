@@ -100,7 +100,7 @@ manager:
 #block(width: 100%)[
   #let self-bib = context query(<self-bib-entry>).first().value
   #set par(leading: 0.5em)
-  #text(font: "Inconsolata", size: 9pt, weight: "bold")[
+  #text(size: 9pt, weight: "bold")[
     #self-bib
   ]
 ]
