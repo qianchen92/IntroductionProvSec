@@ -53,9 +53,10 @@
 
 #show: BODY-MATTER.with(TEXT-SIZE, "Chapter", ship-part-page: false)
 
+#include "chapters/intro.typ"
+#include "chapters/notation.typ"
 #include "chapters/game.typ"
 #include "chapters/simulation.typ"
-#include "chapters/intro.typ"
 #include "chapters/UC.typ"
 
 //----------------------------------------------------------------------------//

@@ -1,3 +1,4 @@
+#import "common.typ":*
 #import "font.typ":*
 #import "TCS.typ":*
 #import "mythm.typ":*

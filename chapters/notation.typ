@@ -2,3 +2,6 @@
 
 = Notations
 
+== Pseudo Code
+
+- $samples$
